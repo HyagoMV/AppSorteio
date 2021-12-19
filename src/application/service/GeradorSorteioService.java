@@ -1,19 +1,20 @@
-package application;
+package application.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import domain.Participante;
-import domain.Score;
-import domain.Sorteio;
+import application.gateway.ParticipanteRepositorio;
+import domain.entitie.Participante;
+import domain.entitie.Score;
+import domain.entitie.Sorteio;
 
-public class GeradorSorteio {
+public class GeradorSorteioService {
     
     private Sorteio sorteio;
     private ParticipanteRepositorio repositorio;
 
-    public GeradorSorteio(Score score, ParticipanteRepositorio repositorio) {
-        sorteio = new Sorteio(score);
+    public GeradorSorteioService(Score score, ParticipanteRepositorio repositorio) {
+        sorteio = new Sorteio(score, new ArrayList<Participante>());
         this.repositorio = repositorio;
         init();
     }

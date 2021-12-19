@@ -2,11 +2,11 @@ package infrastructure;
 
 import java.util.List;
 
-import application.ParticipanteRepositorio;
-import domain.Email;
-import domain.Nome;
-import domain.Participante;
-import domain.Score;
+import application.gateway.ParticipanteRepositorio;
+import domain.entitie.Email;
+import domain.entitie.Nome;
+import domain.entitie.Participante;
+import domain.entitie.Score;
 
 public class ParticipanteRepositorioInMemory implements ParticipanteRepositorio {
 

@@ -1,4 +1,4 @@
-package domain;
+package domain.entitie;
 
 import java.util.regex.Pattern;
 

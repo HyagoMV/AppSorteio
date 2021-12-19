@@ -1,4 +1,4 @@
-package domain;
+package domain.entitie;
 
 public class Score {
 	private Integer value;

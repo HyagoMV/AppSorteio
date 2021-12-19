@@ -1,4 +1,4 @@
-package domain;
+package domain.entitie;
 
 public class Participante {
 	private Nome nome;

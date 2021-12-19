@@ -1,8 +1,8 @@
-package application;
+package application.gateway;
 
 import java.util.List;
 
-import domain.Participante;
+import domain.entitie.Participante;
 
 public interface ParticipanteRepositorio {
 

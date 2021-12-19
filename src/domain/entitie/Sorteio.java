@@ -1,4 +1,4 @@
-package domain;
+package domain.entitie;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,9 +7,9 @@ public class Sorteio {
 	private List<Participante> participantes;
 	private Score score;
 
-	public Sorteio(Score score) {
+	public Sorteio(Score score, List<Participante> participantes) {
 		setScore(score);
-		participantes = new ArrayList<>();
+		this.participantes = participantes;
 	}
 
 	public boolean adicionaParticipante(Participante participante) {
